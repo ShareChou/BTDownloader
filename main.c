@@ -58,5 +58,6 @@ int main(int argc, char *argv[])
 	download_upload_with_peers();
 
 	do_clear_work();
+	
 	return 0;
 }
