@@ -50,7 +50,7 @@ void process_signal(int signo)
 }
 
 //设置信号处理函数
-int set_signa_hander()
+int set_signal_hander()
 {
 	if (signal(SIGPIPE, SIG_IGN) == SIG_ERR) {
 		perror("can not catch signal:sigpipe\n");

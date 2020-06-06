@@ -12,7 +12,7 @@
 #include "torrent.h"
 #include "log.h"
 
-#define DEBUG
+#define DEBUG	//DEBUG用来进行调试，如果不注释这行，会打印调试信息
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		exit(-1);
 	}
 	
-	ret = set_signa_hander();
+	ret = set_signal_hander();
 	if (ret != 0) {
 		printf("%s:%d error\n", __FILE__, __LINE__);
 		return -1;
